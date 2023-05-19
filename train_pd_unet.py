@@ -6,13 +6,13 @@ from os.path import join as pjoin
 
 import cv2
 import numpy as np
-from pytorch_lightning.core.lightning import LightningModule
-from pytorch_lightning.callbacks import ModelCheckpoint, LearningRateMonitor
-from pytorch_lightning.loggers import TensorBoardLogger
-from pytorch_lightning import Trainer, seed_everything
+from   pytorch_lightning import LightningModule
+from   pytorch_lightning.callbacks import ModelCheckpoint, LearningRateMonitor
+from   pytorch_lightning.loggers import TensorBoardLogger
+from   pytorch_lightning import Trainer, seed_everything
 import torch
 from torch.utils.data import DataLoader
-from torch_radon import ConeBeam
+from torch_radon.radon import ConeBeam
 from torch_radon.volumes import Volume3D
 
 from datasets import LungDataset

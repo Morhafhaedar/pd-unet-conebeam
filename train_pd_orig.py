@@ -6,7 +6,7 @@ from os.path import join as pjoin
 
 import cv2
 import numpy as np
-from pytorch_lightning.core.lightning import LightningModule
+from pytorch_lightning import LightningModule
 from pytorch_lightning.callbacks import ModelCheckpoint, LearningRateMonitor
 from pytorch_lightning.loggers import TensorBoardLogger
 from pytorch_lightning import Trainer, seed_everything
